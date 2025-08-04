@@ -12,8 +12,6 @@ import { BeatLoader } from 'react-spinners';
 import { FaPlayCircle } from "react-icons/fa";
 import { FcLike } from "react-icons/fc";
 import { AiFillLike } from "react-icons/ai";
-import { IoShieldCheckmarkOutline } from "react-icons/io5";
-import { GoAlertFill } from "react-icons/go";
 
 import './MovieDetailPage.style.scss'
 const MovieDetailPage = () => {
@@ -165,3 +163,4 @@ if (!data) {
 
 
 export default MovieDetailPage
+
