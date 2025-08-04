@@ -1,6 +1,6 @@
 import React from 'react';
 import './MyPage.scss';
-import { Button, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { useFavoriteQuery } from '../hook/useFavorite';
 import { useWatchlistQuery } from '../hook/useWatchlist';
 import { useHistoryQuery } from '../hook/useHistory';
@@ -93,5 +93,6 @@ const MyPage = ({ seeId }) => {
     </div>
   );
 };
+
 
 export default MyPage;
