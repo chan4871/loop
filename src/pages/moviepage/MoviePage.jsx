@@ -5,7 +5,6 @@ import TopRatedMovieSlide from './TopRatedMovieSlide/TopRatedMovieSlide'
 import UpcomingMovieSlide from './UpcomingMovieSlide/UpcomingMovieSlide'
 import NowPlayingMovieSlide from './NowPlayingMovieSlide/NowPlayingMovieSlide'
 import { Container } from 'react-bootstrap'
-import MovieCard from '../../components/movieCade/MovieCade'
 import './MoviePage.style.scss'
 const MoviePage = () => {
   const movieSections = [
@@ -51,5 +50,6 @@ const MoviePage = () => {
     </div>
   )
 }
+
 
 export default MoviePage
