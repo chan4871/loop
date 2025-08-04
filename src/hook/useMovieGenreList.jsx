@@ -16,7 +16,7 @@ export const useMovieGenreListQuery = () => {
 
 
 const fetchMoviesByGenre = ({ queryKey }) => {
-    const [_, genreId] = queryKey; 
+    const [genreId] = queryKey; 
     if (!genreId) return Promise.reject(new Error("Genre ID is required"));
     return api.get(`/discover/movie?with_genres=${genreId}`);
 };
