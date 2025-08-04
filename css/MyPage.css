@@ -1,0 +1,27 @@
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.MyPageSection {
+  padding: 40px 0;
+}
+.MyPageSection .inner .Favorites ul,
+.MyPageSection .inner .Watchlist ul,
+.MyPageSection .inner .History ul {
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.MyPageSection .inner .Favorites ul li p,
+.MyPageSection .inner .Watchlist ul li p,
+.MyPageSection .inner .History ul li p {
+  font-size: 1.6rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowarp;
+  width: 90%;
+  height: 40px;
+  margin: 10px;
+}

@@ -1,0 +1,75 @@
+.banner {
+  height: 400px;
+  background-size: cover;
+  color: #fff;
+}
+.banner .banner-inner {
+  padding: 24px 0;
+  gap: 30px;
+}
+.banner .banner-inner h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.banner .banner-inner span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.banner .banner-inner span p {
+  display: inline-block;
+}
+.banner .banner-inner span.overview {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.banner .banner-inner span.overview .overview-title {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+.banner .banner-inner span.overview .overview {
+  display: block;
+  font-size: 16px;
+}
+.banner .banner-inner .banner-text-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.banner .banner-inner .banner-text-btn button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+.banner .banner-inner .banner-text-btn button.play {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 4px;
+  color: #000;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4EB3F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

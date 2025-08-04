@@ -1,0 +1,42 @@
+.NotFound-section {
+    width: 100%;
+    height: 80vh;
+    color: #000;
+    position: relative;
+
+    .NotFound-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 60px;
+        align-items: center;
+
+        .NotFound-img {
+            img {
+                width: 260px;
+            }
+        }
+
+        .NotFound-text {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h2 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+
+            Button {
+                width: 150px;
+                background-color: #4EB3F3;
+                color: #Fff;
+            }
+        }
+    }
+}

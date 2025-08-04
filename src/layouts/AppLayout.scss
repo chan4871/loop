@@ -1,0 +1,118 @@
+@use "../styles/variables" as *;
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 4px 10px $shadow;
+
+    a {
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .container {
+        .navbar-brand {
+            img {
+                height: 40px;
+            }
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                a {
+                    color: #000;
+                }
+            }
+
+            .d-flex {
+                align-items: center;
+
+                color: #000;
+
+                .form-control {
+                    border-radius: 20px;
+                    height: 34px;
+
+
+                    &:focus {
+                        background-color: #fff;
+                        border-color: 1px solid $primary;
+                        outline: 0;
+                        box-shadow: 0 0 0 1px $primary;
+                    }
+                }
+
+                .btn {
+                    background: transparent;
+                    color: #000;
+                    border: none;
+
+                    svg {
+                        color: #969696;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+
+        .navbar-brand {
+            color: $primary;
+            font-weight: bold;
+        }
+
+        button.navbar-toggler {
+            border: 1px solid #000, rgb(19, 104, 120);
+        }
+    }
+}
+
+main {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+
+    .container {
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                display: flex;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                    position: relative;
+                    padding: 0 20px;
+                    color: #fff;
+
+                    &::after {
+                        content: '|';
+                        position: absolute;
+                        top: 0;
+                        right: -4px;
+                    }
+
+                    &:last-child {
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+
+                p {}
+            }
+
+            .copy {
+                padding-top: 10px;
+                padding: 0 20px;
+            }
+        }
+    }
+
+}

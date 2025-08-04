@@ -1,0 +1,138 @@
+.react-multi-carousel-list {
+    .react-multi-carousel-track {
+        gap: 8px;
+        
+
+        li {
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+
+            div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .movie-card {
+                    width: 100%;
+                    height: 100%;
+                    height: 350px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+
+                    .overlay {
+
+                        transition: .5s;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        width: 100%;
+                        height: 100%;
+                        color: #fff;
+                        opacity: 0;
+
+                        .text-wrap {
+                            width: 80%;
+                            height: 80%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+
+                            .adult {
+                                color: #000;
+                                display: inline-block;
+                                padding: 2px 8px;
+                                border-radius: 3px;
+                            }
+
+                            .vote {
+                                font-weight: 800;
+                                font-size: 1.2rem;
+                            }
+
+                            .genre {
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                text-overflow: ellipsis;
+                            }
+
+                            .overview {
+                                overflow: hidden;
+                                color: #dcdcdc;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 5;
+                                -webkit-box-orient: vertical;
+                                text-overflow: ellipsis;
+                            }
+                        }
+
+                    }
+
+                    &:hover .overlay {
+                        opacity: 1;
+                        top: 0;
+                    }
+                }
+
+                .movie-title {
+                    font-size: 1.6rem;
+                    overflow: hidden;
+                    white-space: nowarp;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    text-overflow: ellipsis;
+                    width: 90%;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+.LatestTrailers {
+
+
+    .react-multi-carousel-list {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+
+
+        .react-multi-carousel-track {
+            gap: 8px;
+
+            li {
+                .trailer-card-wrap {
+                    .trailer-video-container {}
+
+                    .card-body {
+                        padding: 0;
+                        margin: 0;
+
+                        .trailer-title {
+                            font-size: 1.6rem;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowarp;
+                            width: 90%;
+                            height: 40px;
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

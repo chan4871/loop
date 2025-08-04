@@ -1,0 +1,92 @@
+nav {
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px rgba(121, 121, 121, 0.4784313725);
+          box-shadow: 0 4px 10px rgba(121, 121, 121, 0.4784313725);
+}
+nav a:hover {
+  color: #4EB3F3;
+}
+nav .container .navbar-brand img {
+  height: 40px;
+}
+nav .container .navbar-collapse .navbar-nav a {
+  color: #000;
+}
+nav .container .navbar-collapse .d-flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+}
+nav .container .navbar-collapse .d-flex .form-control {
+  border-radius: 20px;
+  height: 34px;
+}
+nav .container .navbar-collapse .d-flex .form-control:focus {
+  background-color: #fff;
+  border-color: 1px solid #4EB3F3;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 1px #4EB3F3;
+          box-shadow: 0 0 0 1px #4EB3F3;
+}
+nav .container .navbar-collapse .d-flex .btn {
+  background: transparent;
+  color: #000;
+  border: none;
+}
+nav .container .navbar-collapse .d-flex .btn svg {
+  color: #969696;
+  font-size: 1.6rem;
+}
+nav .container .navbar-brand {
+  color: #4EB3F3;
+  font-weight: bold;
+}
+nav .container button.navbar-toggler {
+  border: 1px solid #000, rgb(19, 104, 120);
+}
+
+main {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+}
+footer .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .container ul li button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding: 0 20px;
+  color: #fff;
+}
+footer .container ul li button::after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: -4px;
+}
+footer .container ul li button:last-child::after {
+  content: none;
+}
+footer .container ul .copy {
+  padding-top: 10px;
+  padding: 0 20px;
+}

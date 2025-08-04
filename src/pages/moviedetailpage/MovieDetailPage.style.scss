@@ -1,0 +1,81 @@
+.movie-detail-back {
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        height: 100%;
+        display: flex;
+
+        .row {
+            .col-sm-8 {
+                h2 {
+                    font-size: 4rem;
+                }
+
+                .Badge {
+                    display: flex;
+                    gap: 5px;
+                    margin: 10px 0;
+                    font-size: 16px;
+
+                    span {
+
+                        &.runtime {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                p {
+                    span.Like {
+                        margin-right: 10px;
+                    }
+                }
+
+                p.trailer {
+                    .trailer-btn {
+                        width: fit-content;
+                        padding: 15px 25px;
+                        font-size: 1.2rem;
+                        border-radius: 10px;
+                        background-color: #4EB3F3;
+                        border: none;
+                        color: #000;
+                        cursor: pointer;
+                        transition: .3s;
+
+                        &:hover {
+                            opacity: .9;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.review {
+    width: 1440px;
+    margin: 50px auto;
+
+    .rounded {
+        background-color: #fff;
+        box-shadow: 0px 0px 4px #8585854f;
+        border-radius: 10px;
+    }
+
+    .review-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
