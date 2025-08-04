@@ -4,7 +4,6 @@ import {Routes, Route} from "react-router-dom";
 import AppLayout from "./layouts/AppLayout";
 /* pages */
 import HomePage from "./pages/homepage/HomePage";
-import TvPage from "./pages/TvPage/TvPage.jsx";
 import GenrePage from "./pages/GenrePage/GenrePage";
 import MoviePage from "./pages/moviepage/MoviePage";
 import MovieDetailPage from "./pages/moviedetailpage/MovieDetailPage";
@@ -28,8 +27,8 @@ function App() {
           <Route path=":id" element={<MovieDetailPage></MovieDetailPage>}></Route>
         </Route>
         {/* 로그인, 마이, 404 */}
-        <Route path="/tv" element={<TvPage></TvPage>}></Route>
-        {/* <Route path="/genre" element={<GenrePage></GenrePage>}></Route> */}
+        {/*<Route path="/tv" element={<TvPage></TvPage>}></Route> */}
+         <Route path="/genre" element={<GenrePage></GenrePage>}></Route>
         <Route path="/mypage" element={<MyPage></MyPage>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
