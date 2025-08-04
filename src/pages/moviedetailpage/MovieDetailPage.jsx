@@ -1,11 +1,9 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { BarLoader } from 'react-spinners'
 import { useState } from 'react';
 //hook
 import { useMovieDetail } from '../../hook/useMovieDetail'
 import { useMovieReviews } from '../../hook/useMovieReviews'
-import { useGenreListQuery } from '../../hook/useGenreList'
 import { useMovieTrailer } from '../../hook/useMovieTrailer'
 //리액트 부트스트랩
 import { Container, Row, Col, Badge, Button, Alert, Modal, ModalBody } from 'react-bootstrap'
@@ -164,5 +162,6 @@ if (!data) {
 
   )
 }
+
 
 export default MovieDetailPage
