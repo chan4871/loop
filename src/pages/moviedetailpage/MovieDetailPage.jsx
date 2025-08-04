@@ -111,7 +111,7 @@ if (!data) {
         </Modal.Header>
         <ModalBody>
         {trailer? <div className="ratio ratio-16x9">
-            <iframe src={`https://www.youtube.com/embed/${trailer.key}` title='영화 트레일러'}></iframe>
+            <iframe src={`https://www.youtube.com/embed/${trailer.key}`} title='영화 트레일러'></iframe>
           </div> : <p>예고편 없음</p>
           }
         </ModalBody>
@@ -163,5 +163,6 @@ if (!data) {
 
 
 export default MovieDetailPage
+
 
 
