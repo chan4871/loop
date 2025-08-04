@@ -83,7 +83,7 @@ const Banner = () => {
           <Modal.Title>예고편 미리보기</Modal.Title>
         </Modal.Header>
         <Modal.Body  style={{width : '100%'}}>
-          {trailerKey ? (<iframe  style={{width : '100%', height : '250px'}} src={`https://www.youtube.com/embed/${trailerKey.key}`} frameBorder="0"  />) : (<p>예고편 없음</p>)}
+          {trailerKey ? (<iframe title='영화 배너' style={{width : '100%', height : '250px'}} src={`https://www.youtube.com/embed/${trailerKey.key}`} frameBorder="0"  />) : (<p>예고편 없음</p>)}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
@@ -97,5 +97,6 @@ const Banner = () => {
     </div>
   );
 };
+
 
 export default Banner;
