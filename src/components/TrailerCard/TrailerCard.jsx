@@ -9,13 +9,7 @@ const TrailerCard = ({ movie }) => {
     : null; // 트레일러 키가 없으면 null
 
   // 포스터 이미지 URL (예고편 미리보기처럼 보여줄 때 사용)
-  const posterUrl = movie.poster_path
-    ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
-    : `${process.env.PUBLIC_URL}/img/default_poster.png`; // 대체 이미지
-
-  if (!youtubeEmbedUrl) {
-    return null; // 예고편이 없는 영화는 이 카드를 렌더링하지 않음
-  }
+  
 
   return (
     <Card className="trailer-card-wrap">
