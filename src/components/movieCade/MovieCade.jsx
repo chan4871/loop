@@ -1,7 +1,7 @@
 import React from 'react'
 import { useGenreListQuery } from '../../hook/useGenreList'
 import { useNavigate } from 'react-router-dom';
-import {Card, Container} from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
 import './MovieCade.scss'
 
 const MovieCard = ({movie}) => {
@@ -15,9 +15,7 @@ const MovieCard = ({movie}) => {
 
   const adult = movie.adult ? "전체관람" : "19"
 
-  const youtubeEmbedUrl = movie.trailerKey
-    ? `https://www.youtube.com/embed/${movie.trailerKey}`
-    : null;
+  
 
   return (
     <div>
@@ -43,5 +41,6 @@ const MovieCard = ({movie}) => {
     </div>
   )
 }
+
 
 export default MovieCard
